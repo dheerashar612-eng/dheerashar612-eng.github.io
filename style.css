@@ -1,41 +1,141 @@
+/* IMPORT CUTE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* GLOBAL */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #FFC7E3;
+    font-family: 'Poppins', sans-serif;
+    background: #FFE8F3;
     color: #FF5FA2;
 }
 
+/* HEADER */
 header {
-    background: #FF9E6D;
-    padding: 15px;
+    background: linear-gradient(90deg, #FF9E6D, #FF6F3C);
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo {
-    height: 60px;
+    height: 65px;
 }
 
+/* NAVIGATION */
 nav a {
     margin: 0 15px;
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 17px;
+    transition: 0.25s ease;
 }
 
+nav a:hover {
+    opacity: 0.8;
+    text-shadow: 0 0 10px rgba(255,255,255,0.7);
+}
+
+/* HERO SECTION */
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 120px 20px;
     background: linear-gradient(135deg, #FFC7E3, #FF9E6D);
-    color: #FF5FA2;
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 55px;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+/* PAGE LAYOUT */
+.page {
+    padding: 50px 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.page h1 {
+    color: #FF5FA2;
+    font-size: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* SHOP GRID */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.item {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.item img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+/* EVENTS LIST */
+.events-list li {
+    background: white;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    list-style: none;
+    font-size: 18px;
+}
+
+/* FAQ */
+h3 {
+    color: #FF6F3C;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+p {
+    font-size: 17px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 60px;
+    background: #FF6F3C;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    font-size: 15px;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
 }
