@@ -234,3 +234,21 @@ footer {
     font-size: 14px;
     box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
 }
+/* SHOP PAGE DIFFERENT STYLE */
+.shop-page {
+    background: #FFF;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    border-radius: 30px;
+}
+
+.shop-page h1 {
+    color: #FF5FA2;
+    margin-bottom: 30px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FF6F3C;
+}
