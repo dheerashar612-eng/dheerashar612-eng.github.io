@@ -252,3 +252,23 @@ footer {
     font-weight: 700;
     color: #FF6F3C;
 }
+/* MAKE SHOP PAGE LOOK DIFFERENT */
+.shop-page {
+    background: #FFFFFF !important;
+    padding: 40px 20px 80px;
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.shop-page h1 {
+    color: #FF5FA2;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Remove pink background from shop */
+body.shop-body {
+    background: #FFFFFF !important;
+}
